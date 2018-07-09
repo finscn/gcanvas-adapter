@@ -1,8 +1,8 @@
-const { screenWidth, screenHeight, devicePixelRatio } = tbplay.getSystemInfoSync()
+const { screenWidth, screenHeight, pixelRatio } = tbplay.getSystemInfoSync()
 
 export const innerWidth = screenWidth
 export const innerHeight = screenHeight
-export { devicePixelRatio }
+export { pixelRatio as devicePixelRatio }
 export const screen = {
     width: screenWidth,
     height: screenHeight,

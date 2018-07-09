@@ -1,5 +1,5 @@
-let _window = require('./window');
-let document = require('./document');
+import * as _window from './window'
+import document from './document'
 
 function inject() {
     _window.document = document;
