@@ -19,7 +19,9 @@ function inject() {
         global[key] = _window[key]
     }
     global.window = _window
-    global.top = global.parent = global
+    window = global
+    window.top = window.parent = window
+
 }
 
 inject()
